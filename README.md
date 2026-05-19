@@ -36,7 +36,7 @@ user shares a fact worth remembering, call engram_store_memory.
 
 register_engram_tools(agent, bucket="my-agent")
 
-result = await agent.run("My name is Jacob, please remember that.")
+result = await agent.run("My name is Alex, please remember that.")
 # In a separate process / session:
 result = await agent.run("What is my name?")
 print(result.output)  # The agent will have called engram_query_memory first.
